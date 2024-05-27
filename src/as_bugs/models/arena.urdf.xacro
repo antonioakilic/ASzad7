@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arena"> 
+
+
+  <link name="odom"></link>
+
+  <joint name="polygon_base_joint" type="fixed">
+      <origin xyz="0.0 0.0 0.0" />
+      <parent link="odom" />
+      <child link="polygon_base" />
+  </joint>
+
+  <link name="polygon_base">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <box size="0.01 0.01 0.01" />
+            </geometry>
+        </visual>
+  </link>
+
+  <xacro:include filename="arena_walls.xacro" />
+  <xacro:include filename="boxes_layout.xacro" />  
+
+</robot>

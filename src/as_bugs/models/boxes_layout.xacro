@@ -1,0 +1,140 @@
+<?xml version='1.0'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <material name="red">
+        <color rgba="0.8 0.0 0.0 1" />
+    </material>
+
+    <joint name="box_1_joint" type="fixed">
+        <origin xyz="-2.05 0.5 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_1" />
+    </joint>
+
+    <link name="box_1">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_2_joint" type="fixed">
+        <origin xyz="-1.2 -0.55 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_2" />
+    </joint>
+
+    <link name="box_2">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_3_joint" type="fixed">
+        <origin xyz="-0.72 0.89 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_3" />
+    </joint>
+
+    <link name="box_3">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_4_joint" type="fixed">
+        <origin xyz="-0.72 1.5 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_4" />
+    </joint>
+
+    <link name="box_4">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_5_joint" type="fixed">
+        <origin xyz="0.75 -1.55 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_5" />
+    </joint>
+
+    <link name="box_5">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_6_joint" type="fixed">
+        <origin xyz="0.75 -0.93 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_6" />
+    </joint>
+
+    <link name="box_6">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_7_joint" type="fixed">
+        <origin xyz="1.75 0.11 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_7" />
+    </joint>
+
+    <link name="box_7">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+    <joint name="box_8_joint" type="fixed">
+        <origin xyz="1.75 0.73 0.1" />
+        <parent link="polygon_base" />
+        <child link="box_8" />
+    </joint>
+
+    <link name="box_8">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 -${pi/2}" />
+            <geometry>
+                <box size="0.6 0.4 0.2" />
+            </geometry>
+            <material name="red" />
+        </visual>
+    </link>
+
+
+
+
+
+</robot>
